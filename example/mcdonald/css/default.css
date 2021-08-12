@@ -1,0 +1,18 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+img{
+    border:0;
+}
+ul, ol, li {
+    list-style: none;
+}
+.hide{
+    display:none;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}

@@ -1,0 +1,188 @@
+:root {
+    --px5 : 0.313rem;   /* 5px  */
+    --px10 : 0.625rem;  /* 10px */
+    --px12 : 0.75rem;   /* 12px */
+    --px18 : 1.125rem;  /* 18px */
+    --px20 : 1.25rem;   /* 20px */
+    --px30 : 1.875rem;  /* 30px */
+    --px48 : 3rem;      /* 48px */
+    --px-60 : -3.75rem; /* -60px */
+}
+
+/* tesla */
+/* header */
+header {font-size: var(--px20); height: 10vh; width: 100vw;}
+header .container {width:80%; height: 100%; margin: auto; letter-spacing: 1px; display: flex; justify-content: space-between; align-items: center;}
+header .container .logo {width: 10%; font-size: var(--px30); padding: var(--px10);}
+
+header .container .topMenu {width: 80%;}
+header .container .topMenu ul {width: 100%; display: flex; justify-content: space-evenly;}
+header .container .topMenu ul li a {padding: var(--px5) var(--px10);}
+header .container .topMenu ul li a:hover {background-color: rgba(102, 99, 98,0.5);}
+
+header .container .login {width: 10%; font-size: var(--px30);}
+header .container .login a {padding: var(--px5) var(--px10);}
+header .container .login a:hover {background-color: rgba(102, 99, 98,0.5);}
+
+header .container .hamburger {display: none;}
+
+/* eventModel */
+.eventModel {position: relative; width: 100vw; height: 60vh; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #f5f4f2;}
+.eventModel div {position: absolute; top:0; left:0; opacity:0; z-index: 0; transition:all .7s ease; transform: scale(0.9);} 
+.eventModel div.on {opacity:1; z-index:1; transform: scale(1);}
+
+/* recommendModel */
+.recommendModel {width: 100vw; height: 30vh; background: #202126; color:white;}
+.recommendModel .container {width: 80vw; height: 100%; background:url("../img/handle.jpg") no-repeat 0 var(--px-60); margin:auto; display: flex; justify-content: space-evenly; align-items: center;}
+
+.recommendModel .container .title {width: 30%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: var(--px20); font-weight: bold;}
+.recommendModel .container .title span:last-child {font-size: var(--px18); font-weight: normal;}
+
+.recommendModel .container .search {width: 70%; height: 100%; display: flex; justify-content: space-evenly; align-items: center;}
+.recommendModel .container .search a {width: 40%; height: 60%; color: white; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; border: 1px solid white;}
+.recommendModel .container .search a:hover { color:yellow; border:2px solid yellow;}
+.recommendModel .container .search a span:first-child { font-size: var(--px20); font-weight: bolder;}
+
+/* new Model */
+.newModel {width: 100vw; height: 60vh; }
+.newModel .container {width: 80%; height: 100%; margin: auto; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;}
+
+.newModel .container .title {width: 100%; height: 20%; font-size: var(--px48); display: flex; justify-content: center; align-items: center;}
+
+.newModel .container .newModelDesc {width: 100%; height: 80%; display: flex; justify-content: space-evenly; align-items: center;}
+.newModel .container .newModelDesc a { display: inline-block; width: 45%; height: 80%; display: flex; justify-content: space-evenly;}
+.newModel .container .newModelDesc a div { display: flex; justify-content: center; align-items: center; font-size: var(--px48); width: 100%; height: 100%; }
+.newModel .container .newModelDesc a div.newModel1 { background: url("../img/newCar.jpg"); background-position: center; background-size: cover; }
+.newModel .container .newModelDesc a div.newModel2 { background: url("../img/redCar2.jpg"); background-position: center; background-size: cover;}
+.newModel .container .newModelDesc a div span {color:white;}
+
+.newModel .container .newModelDesc a:hover div {opacity:0.5;}
+.newModel .container .newModelDesc a:hover div span:first-child {display: none;}
+.newModel .container .newModelDesc a:hover div span:after {content: "자세히 보기"; font-weight: bold; font-size: var(--px20); color:yellow; display: inline-block; width: 200px; height: 80px; line-height: 80px; text-align: center; border: 2px solid yellow;}
+
+/* riding */
+.riding {width: 100vw; height: 30vh; background:#47423f;}
+.riding .container {width:80%; height: 100%; margin: auto; display: flex; justify-content: space-evenly; align-items: center; background: url("../img/background1.jpg") no-repeat;} 
+.riding .container a {color: white; display: inline-block; width: 40%; height: 70%;}
+
+.riding .container a .ridingAsk {display: flex; justify-content: space-evenly; align-items: center; width: 100%; height: 100%; border: 1px solid white;}
+.riding .container a:hover .ridingAsk {width: 100%; height: 100%; color:yellow; border:2px solid yellow;}
+.riding .container a .ridingAsk > span {width:30%; font-size: var(--px48); display: flex; justify-content: center;}
+.riding .container a .ridingAsk .group {width:70%; height: 100%; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;}
+.riding .container a .ridingAsk .group span:first-child {font-size: var(--px20); font-weight: bolder;}
+
+.riding .container a .branchSearch {display: flex; justify-content: space-evenly; align-items: center; width: 100%; height: 100%; border: 1px solid white;}
+.riding .container a:hover .branchSearch {width: 100%; height: 100%; color:yellow; border:2px solid yellow;}
+.riding .container a .branchSearch > span {width:30%; font-size: var(--px48); display: flex; justify-content: center;}
+.riding .container a .branchSearch .group {width:70%; height: 100%; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;}
+.riding .container a .branchSearch .group span:first-child {font-size: var(--px20); font-weight: bolder;}
+
+/* footer */
+footer {width: 100vw; height: 20vh; background:#f5f4f2;}
+footer .container {width: 80%; height: 100%; margin:auto; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;}
+footer .container div {width: 100%;}
+footer .container div ul {width:100%; display: flex; justify-content: center; }
+
+footer .container div ul li:after {content: ""; width: 1px; height: 10px; margin: 0 13px; display: inline-block; vertical-align: middle; background-color: #444;}
+footer .container div ul li:last-child:after {display: none;}
+
+/* Modal */
+.modal_container{position: absolute; left: 10vw; top:20vh; z-index: 1; display: flex; justify-content: center; align-items: center; width: 500px; height: 150px; background-color: #47423f; border-radius: 10px;}
+.modal {padding: 20px; border: 1px solid gray; border-radius: 10px;}
+.modal p {color: white; font-weight: bold;}
+.modal p span {color:yellow;}
+.modal button { margin-top: 10px; padding:5px;}
+
+.hide {display : none;}
+
+/* desktop */
+@media screen  and (max-width:1200px) {
+    /* header */
+    header .container {width:100vw;}
+
+    /* event Model */
+    .eventModel div {width: 100vw; height: 100%;}
+    .eventModel div a {width: 100%; height: 100%;}
+    .eventModel div a img {width: 100%;}
+
+    /* .recommendModel */
+    .recommendModel .container {width: 100vw;}
+
+    /* new Model */
+    .newModel {height: 70vh;}
+    .newModel .container {width: 100vw;}
+
+    /* riding */
+    .riding {height: 40vh;}
+    .riding .container {width: 100vw;}
+
+    /* footer */
+    footer {height: 30vh;}
+    footer .container {width: 100vw;}
+}
+
+/* tablet */
+@media screen and (max-width:768px) {
+     /* header */
+    header {height: 15vh;}
+    header .container {font-size: var(--px18);}
+
+    /* eventModel */
+    .eventModel {height: 30vh;}
+
+    /* .recommendModel */
+    .recommendModel .container { font-size: var(--px12);}
+    .recommendModel .container .title {display: none;}
+    .recommendModel .container .search {width: 100%;}
+
+    /* riding */
+    .riding .container a {width: 45%;}
+    .riding .container > a > div {flex-direction: column;}
+    .riding .container > a > div > span > i {display: none;}
+    .riding .container > a > div > .group {width: 100%;}
+
+    /* footer */
+    footer .container {font-size: var(--px12);}
+}
+
+/* mobile */
+@media screen and (max-width:480px) {
+    /* header */
+    header .container {position: relative;}
+    header .container .logo {width: 100%; text-align: center;}
+    header .container .topMenu {display: none;}
+    header .container .login {display: none;}
+    header .container .hamburger {display: block; position: absolute; top:var(--px18); right: var(--px20); font-size: var(--px30);}
+
+    /* eventModel */
+    .eventModel { height: 20vh;}
+
+    /* new Model */
+    .newModel .container .newModelDesc { flex-direction: column; justify-content: space-evenly;}
+    .newModel .container .newModelDesc a {width: 90%; height: 40%;}
+
+    /* recommendModel */
+    .recommendModel {height: 60vh;}
+    .recommendModel .container {flex-direction: column; justify-content: space-evenly;}
+    .recommendModel .container .title {display: flex; width: 90%; height:40%; justify-content: center; }
+    .recommendModel .container .title span {font-size: var(--px18);}
+    .recommendModel .container .search {flex-direction: column; justify-content: space-evenly;}
+    .recommendModel .container .search a {width: 90%; height: 30%;}
+
+    /* footer */
+    footer {height: 60vh;}
+    footer .container {height: 100%;}
+    footer .container div {height: 30%;}
+    footer .container div:first-child {height: 40%;}
+    footer .container div ul { height: 100%; flex-direction: column; justify-content: center; align-items: center; border-bottom: 1px solid rgba(102, 99, 98,0.5);}
+    footer .container div ul li {font-size: 1rem;}
+    footer .container div ul li:after {display: none;}
+}
+
+
+
+
+
+
+
+

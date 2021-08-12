@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+
+:root {
+    --px5 : 0.313rem;   /* 5px  */
+    --px10 : 0.625rem;  /* 10px */
+    --px12 : 0.75rem;   /* 12px */
+    --px18 : 1.125rem;  /* 18px */
+    --px20 : 1.25rem;   /* 20px */
+    --px25 : 1.563rem;   /* 20px */
+    --px30 : 1.875rem;  /* 30px */
+    --px40 : 2.5rem;  /* 30px */
+    --px48 : 3rem;      /* 48px */
+    --px60 : 3.75rem;  /* 60px */
+    --px-60 : -3.75rem; /* -60px */
+}
+
+/* menuSticky */
+#menuSticky { position: fixed; top: 30vh; right:5vw; width:130px; height:230px; background-color:rgba(255,177,164,0.8); font-size: 20px; padding:20px; color:white; font-weight: bold; border-radius: 10px; z-index: 9999;}
+#menuSticky ul li {margin-bottom: var(--px10);}
+
+/* header */
+header {width: 100vw; height: 100vh;}
+header .container {display: flex; align-items: center; width: 100%; height: 100%; position: relative; background: #FFB1A4;}
+header .container > p {font-size: 20vmin; line-height: 1; color: white; font-weight: bold; letter-spacing: 2px; font-family: 'Poppins', sans-serif; text-transform: uppercase; padding-left: var(--px40);}
+
+/* Cafe */
+#cafe {width:100vw; height: 100vh; display: flex; justify-content: center; align-content: center; background: url("../example/coffeShop/img/bin-1920.jpg");}
+#cafe .container {width: 80%; height: 80%; margin: auto; display: flex; flex-direction: column; background: rgba(116,64,44,0.7);}
+
+#cafe .container .top {width: 100%; height: 80%; display: flex; justify-content: space-evenly;}
+#cafe .container .top .left {width: 60%; height: 100%;}
+#cafe .container .top .left img {width: 100%; height: 100%; object-fit: contain;}
+
+#cafe .container .top .right{width: 30%; height: 100%; color:white; font-family: 'Cute Font', cursive;}
+#cafe .container .top .right .desc {width: 100%; height: 100%;}
+#cafe .container .top .right .desc ul {height: 100%; display: flex; flex-direction: column; justify-content: space-evenly; }
+#cafe .container .top .right .desc ul li {margin-bottom: 1rem; margin-left: 0.625rem;}
+#cafe .container .top .right .desc ul li .titleMain {font-size: var(--px60); font-weight: bold; color:#1b0b0e;}
+#cafe .container .top .right .desc ul li .titleSub {font-size: var(--px40);}
+#cafe .container .top .right .desc ul li p {font-size: var(--px30);}
+
+#cafe .container .bottom {width: 100%; height: 20%;}
+#cafe .container .bottom .link {width: 100%; height: 100%; display: flex; justify-content: space-evenly; align-items: center;}
+#cafe .container .bottom .link div {width: 20%; height: 40%;}
+#cafe .container .bottom .link div a {display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; border: 2px solid white; text-align: center;}
+#cafe .container .bottom .link div a span {font-size: var(--px20);}
+
+/* Tesla */
+#tesla {width:100vw; height: 100vh; display: flex; justify-content: center; align-content: center; background: url("../example/tesla/img/background1.jpg"); background-size: cover;}
+#tesla .container {width: 80%; height: 80%; margin: auto; display: flex; flex-direction: column; background: rgba(73,74,76,0.5);}
+
+#tesla .container .top {width: 100%; height: 80%; display: flex; justify-content: space-evenly;}
+#tesla .container .top .left {width: 60%; height: 100%;}
+#tesla .container .top .left img {width: 100%; height: 100%; object-fit: contain;}
+
+#tesla .container .top .right{width: 30%; height: 100%; color:white; font-family: 'Cute Font', cursive;}
+#tesla .container .top .right .desc {width: 100%; height: 100%;}
+#tesla .container .top .right .desc ul {height: 100%; display: flex; flex-direction: column; justify-content: space-evenly; }
+#tesla .container .top .right .desc ul li {margin-bottom: 1rem; margin-left: 0.625rem;}
+#tesla .container .top .right .desc ul li .titleMain {font-size: 60px; font-weight: bold; color:#1b0b0e;}
+#tesla .container .top .right .desc ul li .titleSub {font-size: 40px;}
+#tesla .container .top .right .desc ul li p {font-size: 30px;}
+
+#tesla .container .bottom {width: 100%; height: 20%;}
+#tesla .container .bottom .link {width: 100%; height: 100%; display: flex; justify-content: space-evenly; align-items: center;}
+#tesla .container .bottom .link div {width: 20%; height: 40%;}
+#tesla .container .bottom .link div a {display: flex; justify-content: center; align-items: center;  width: 100%; height: 100%; border: 2px solid white; text-align: center; vertical-align: middle;}
+#tesla .container .bottom .link div a span {font-size: 20px;}
+
+/* WebStandard Site */
+#webStandard {width:100vw; height: 100vh; display: flex; justify-content: center; align-content: center; background: url("../img/coffee-1920.jpg"); background-size: cover;}
+#webStandard .container {width: 80%; height: 80%; margin: auto; display: flex; flex-direction: column; background: rgba(138,101,90,0.5);}
+
+#webStandard .container .top {width: 100%; height: 80%; display: flex; justify-content: space-evenly;}
+#webStandard .container .top .left {width: 60%; height: 100%;}
+#webStandard .container .top .left img {width: 100%; height: 100%; object-fit: contain;}
+
+#webStandard .container .top .right{width: 30%; height: 100%; color:white; font-family: 'Cute Font', cursive;}
+#webStandard .container .top .right .desc {width: 100%; height: 100%;}
+#webStandard .container .top .right .desc ul {height: 100%; display: flex; flex-direction: column; justify-content: space-evenly; }
+#webStandard .container .top .right .desc ul li {margin-bottom: 1rem; margin-left: 0.625rem;}
+#webStandard .container .top .right .desc ul li .titleMain {font-size: 60px; font-weight: bold; color:#1b0b0e;}
+#webStandard .container .top .right .desc ul li .titleSub {font-size: 40px;}
+#webStandard .container .top .right .desc ul li p {font-size: 30px;}
+
+#webStandard .container .bottom {width: 100%; height: 20%;}
+#webStandard .container .bottom .link {width: 100%; height: 100%; display: flex; justify-content: space-evenly; align-items: center;}
+#webStandard .container .bottom .link div {width: 20%; height: 40%;}
+#webStandard .container .bottom .link div a {display: flex; justify-content: center; align-items: center;  width: 100%; height: 100%; border: 2px solid white; text-align: center; vertical-align: middle;}
+#webStandard .container .bottom .link div a span {font-size: 20px;}
+
+/* ing */
+#ing {width:100vw; height:100vh; display: flex; justify-content: center; align-items: center; background:url("../img/desk-1920.jpg"); background-size: cover;}
+#ing .container {width: 80%; height: 80%; margin:auto; display: flex; font-family: 'Cute Font', cursive; font-size: var(--px40); color:white;}
+#ing .container .left {width: 45%; height: 100%; display: flex; flex-direction: column; justify-content: space-between;}
+#ing .container .left .top {width: 90%; height: 45%; display: flex; flex-direction: column; justify-content: center; align-items: center; background:rgba(226,226,226,0.6);}
+#ing .container .left .bottom {width: 90%; height: 45%; display: flex; flex-direction: column; justify-content: center; align-items: center;  background:rgba(226,226,226,0.3);}
+
+#ing .container .right {width: 45%; height: 100%; display: flex; flex-direction: column; justify-content: space-between;}
+#ing .container .right .top {width: 90%; height: 20%; display: flex; flex-direction: column; justify-content: center; align-items: center;  background:rgba(226,226,226,0.3);}
+#ing .container .right .bottom {width: 90%; height: 70%; display: flex; flex-direction: column; justify-content: center; align-items: center; color:black; background:rgba(226,226,226,0.8);}
+
+/* contact */
+#contact {width:100vw; height:100vh; display: flex; justify-content: center; align-items: center; background:url("../img/cell-1920.jpg"); background-size: cover;}
+#contact .container {width: 80%; height: 80%; margin:auto; display: flex; font-size: 4rem; font-family: 'Cute Font', cursive;}
+#contact .container ul {width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-around; align-items: center;}
+#contact .container ul li {width: 80%; height: 15%; display: flex; justify-content: center; align-items: center; border-radius: 2rem; background-color: rgba(255,255,255,0.4);}
+#contact .container ul li span {color:black;}
+
+/* button*/ 
+.web a:hover, .tab a:hover, .mob a:hover {background-color: rgba(226,226,226,0.5);}
+
+/* titleMain, titleSub animation */
+.right .desc ul li {position: relative;}
+.right .desc ul li::before,
+.right .desc ul li::after {content:""; position: absolute; background: white;}
+
+.right .desc ul li::before {top:0; left:0; width:0; height: 1px;}
+.right .desc ul li::after {bottom:0; left:0; width:0; height: 1px;}
+
+.right .desc ul li:hover::before {animation:rowLine 0.5s both;}
+.right .desc ul li:hover::after {animation:rowLine 0.5s both;}
+
+@keyframes rowLine{
+    from {left:0; width:0;}
+    49% {left:0; width:100%;}
+    50% {left:inherit; right:0; width:100%;}
+    to {left:inherit; right:0; width:0;}
+}
+
+
+
+/* tablet */
+@media screen and (max-width:75rem) {
+
+    #menuSticky {right:1vw; bottom: -10vh;}
+
+    /* cafe */
+    #cafe .container .top .right .desc ul li .titleMain {font-size: var(--px40);}
+    #cafe .container .top .right .desc ul li .titleSub {font-size: var(--px30);}
+    #cafe .container .top .right .desc ul li p {font-size: var(--px20);}
+
+    /* Tesla */
+    #tesla .container .top .right .desc ul li .titleMain {font-size: var(--px40);}
+    #tesla .container .top .right .desc ul li .titleSub {font-size: var(--px30);}
+    #tesla .container .top .right .desc ul li p {font-size: var(--px20);}
+
+    /* WebStandard */
+    #webStandard .container .top .right .desc ul li .titleMain {font-size: var(--px40);}
+    #webStandard .container .top .right .desc ul li .titleSub {font-size: var(--px30);}
+    #webStandard .container .top .right .desc ul li p {font-size: var(--px20);}
+
+    /* Ing */
+    #ing .container {font-size: var(--px25);}
+
+}
+
+/* tablet */
+@media screen and (max-width:48rem) {
+    
+    #menuSticky {display:none;}
+
+    /* intro */
+    header .container > p {font-size: 3rem;}
+
+    /* cafe */
+    #cafe .container {width: 100vw; height: 100vh; justify-content: space-evenly; align-items: center;}
+    #cafe .container .top {width: 80%; height: 75%; flex-direction: column; justify-content: space-between; align-items: center;}
+    #cafe .container .top .left {width: 100%; height: 60%;}
+    #cafe .container .top .right {width: 100%; height: 40%;}
+
+    #cafe .container .top .right .desc ul li .titleMain {font-size: var(--px30); color:white;}
+    #cafe .container .top .right .desc ul li .titleSub {font-size: var(--px20);}
+    #cafe .container .top .right .desc ul li p {font-size: var(--px20);}
+
+    #cafe .container .bottom {width: 80%; height: 15%;}
+
+    /* Tesla */
+    #tesla .container {width: 100vw; height: 100vh; justify-content: space-evenly; align-items: center;}
+    #tesla .container .top {width: 80%; height: 75%; flex-direction: column; justify-content: space-between; align-items: center;}
+    #tesla .container .top .left {width: 100%; height: 60%;}
+    #tesla .container .top .right {width: 100%; height: 40%;}
+
+    #tesla .container .top .right .desc ul li .titleMain {font-size: var(--px30); color:white;}
+    #tesla .container .top .right .desc ul li .titleSub {font-size: var(--px20);}
+    #tesla .container .top .right .desc ul li p {font-size: var(--px20);}
+
+    #tesla .container .bottom {width: 80%; height: 15%;}
+
+    /* WebStandard */
+    #webStandard .container {width: 100vw; height: 100vh; justify-content: space-evenly; align-items: center;}
+    #webStandard .container .top {width: 80%; height: 75%; flex-direction: column; justify-content: space-between; align-items: center;}
+    #webStandard .container .top .left {width: 100%; height: 60%;}
+    #webStandard .container .top .right {width: 100%; height: 40%;}
+
+    #webStandard .container .top .right .desc ul li .titleMain {font-size: var(--px30); color:white;}
+    #webStandard .container .top .right .desc ul li .titleSub {font-size: var(--px20);}
+    #webStandard .container .top .right .desc ul li p {font-size: var(--px20);}
+
+    #webStandard .container .bottom {width: 80%; height: 15%;}
+
+    /* Ing */
+    #ing .container {width: 100vw; height: 100vh; font-size: var(--px20); display:flex; justify-content: center; align-items: center;}
+    #ing .container .left {width: 45%; height: 80%;}
+    #ing .container .left .top {width: 90%; height: 45%;}
+    #ing .container .left .bottom {width: 90%; height: 45%;} 
+
+    #ing .container .right {width: 45%; height: 80%;}
+    #ing .container .right .top {width: 90%; height: 20%;}
+    #ing .container .right .bottom {width: 90%; height: 70%;}
+
+    /* Contact */
+    #contact .container ul li {width: 100%; font-size: var(--px30);}
+
+}
+
+/* mobile */
+@media screen and (max-width:30rem) {
+    #menuSticky {display:none;}
+
+    /* intro */
+    header .container > p {font-size: 2em;}
+
+
+    /* button*/ 
+    #cafe .container .bottom .link div a span {font-size: var(--px12);}
+    #tesla .container .bottom .link div a span {font-size: var(--px12);}
+    #webStandard .container .bottom .link div a span {font-size: var(--px12);}
+
+
+      /* Ing */
+    #ing .container { font-size: var(--px20); flex-direction: column; justify-content: space-between; align-items: center;}
+    #ing .container .left {width: 100%; height: 49%;}
+    #ing .container .left .top {width: 100%; height: 45%; background-color: rgba(255,255,255,0.3);}
+    #ing .container .left .bottom {width: 100%; height: 45%; background-color: rgba(255,255,255,0.6);} 
+
+    #ing .container .right {width: 100%; height: 49%;}
+    #ing .container .right .top {width: 100%; height: 20%; }
+    #ing .container .right .bottom {width: 100%; height: 70%;}
+
+
+}
