@@ -1,0 +1,42 @@
+[
+    {
+      "id":0,
+      "name": "다카 무라카",
+      "title": "Rainbow",
+      "size": "45.0 x 45.0 cm",
+      "estimatedPrice": 2100000,
+      "currentPrice": 2100000
+    },
+    {
+      "id":1,
+      "name": "앤디워홀",
+      "title": "Dollar Sign",
+      "size": "45.0 x 45.0 cm",
+      "estimatedPrice": 3000000,
+      "currentPrice": 1600000
+    },
+    {
+      "id":2,
+      "name": "카우스",
+      "title": "Green",
+      "size": "28.7 x 22.0 cm",
+      "estimatedPrice": 6000000,
+      "currentPrice": 10000000
+    },
+    {
+      "id":3,
+      "name": "하석대",
+      "title": "무제",
+      "size": "45.5 x 45.5 cm",
+      "estimatedPrice": 8000000,
+      "currentPrice": 14000000
+    },
+    {
+      "id":4,
+      "name": "Lee",
+      "title": "Man with Woman",
+      "size": "35.5 x 35.5 cm",
+      "estimatedPrice": 18000000,
+      "currentPrice": 18000000
+    }
+  ]
